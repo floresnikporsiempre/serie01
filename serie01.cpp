@@ -1,7 +1,7 @@
 # include <iostream>
 # include <math.h>
 float potencia(float b, int p);
-int factorial(int n);
+double factorial(int n);
 using namespace std;
 
 int main(){
@@ -15,7 +15,7 @@ int main(){
     cin>>x;
     cout<<"\ncantidad de terminos a usar = ";
     cin>>n;
-    for(y=1;y<=n;y++)
+    for(y=1;y<n;y++)
     {
         exp=exp+e/m;
         e = potencia(x,y);
@@ -37,9 +37,9 @@ float potencia(float b, int p){
     return(resultado);
 }
 
-int factorial(int n){
+double factorial(int n){
     int  i;
-    float f=1;
+    double f=1;
     for (i=1;i<=n;i++){
         f=f*i;
     }
